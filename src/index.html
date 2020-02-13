@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal Windows</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+  <section class="page">
+
+    <button id="btn1" class="button pure-button">Show Dialog for task #1</button>
+    <button id="btn2" class="button pure-button">Show Dialog for task #2</button>
+    <button id="btn3" class="button pure-button">Show Dialog for task #3</button>
+
+    <div id="modal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div class="task">
+          <p>1. Реализуйте функцию fib(), возвращающую n-ное число Фибоначчи.</p>
+          <label for="fib">Введите число:</label>
+          <input id="fib" type="text" class="input">
+          <button class="answerButton pure-button">Посчитать</button>
+          <p id="fibAnswer" class="answer"></p>
+        </div>
+
+        <div class="task">
+          <p>2. Реализуйте функцию uniq(), которая принимает массив
+            чисел и возвращает уникальные числа, найденные в нём.
+            Может ли функция решить эту задачу за время O(N)?</p>
+          <label for="uniq">Введите числа через запятую:</label>
+          <input id="uniq" type="text" class="input">
+          <button class="answerButton pure-button">Ответ</button>
+          <p id="uniqAnswer" class="answer"></p>
+        </div>
+
+        <div class="task">
+          <p>3. Реализуйте функцию permute(), которая возвращает
+            массив строк, содержащий все пермутации заданной строки.</p>
+          <label for="permute">Введите строку:</label>
+          <input id="permute" type="text" class="input">
+          <button class="answerButton pure-button">Ответ</button>
+          <p id="permuteAnswer" class="answer"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <script src="scripts/modal.js"></script>
+  </body>
+</html>
