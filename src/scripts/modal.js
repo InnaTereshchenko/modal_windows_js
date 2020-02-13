@@ -1,4 +1,5 @@
 //1. Реализуйте функцию fib(), возвращающую n-ное число Фибоначчи.
+
 const fib = function(N) {
   if (N <= 1) {
     return N
@@ -9,12 +10,14 @@ const fib = function(N) {
 // 2. Реализуйте функцию uniq(), которая принимает массив
 // чисел и возвращает уникальные числа, найденные в нём.
 // Может ли функция решить эту задачу за время O(N)?
+
 const uniq = (array) => {
   return array.filter((el, index, all) => all.indexOf(el) === index)
 };
 
 // 3. Реализуйте функцию permute(), которая возвращает
 // массив строк, содержащий все пермутации заданной строки.
+
 const permute = function(string) {
   let results = [];
 
@@ -100,6 +103,5 @@ for (let i= 0; i < answerButton.length; i++) {
       }
         break;
     }
-  }
+  };
 }
-

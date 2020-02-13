@@ -4,8 +4,9 @@
   "description": "test task",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .jsx,.js ./src/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
